@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.filterBox {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.filterColor {
+    position: absolute;
+    top: 40%;
+}
+
+.filterInputs {
+    position: absolute;
+    top: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.filterInputs,
+.filterColor {
+    color: #fff;
+    background: #000;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.filterInputs input {
+    margin: 15px 0;
+    width: 300px;
+}
+
+@media screen and (max-width:330px) {
+    .filterInputs input {
+        margin: 15px 0;
+        width: 250px;
+    }
+}
